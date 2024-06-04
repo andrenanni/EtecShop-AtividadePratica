@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace EtecShop.Models;
 
 [Table("Produto")]
-public class Produtos
+public class Produto
 {
     [Key]
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
