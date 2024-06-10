@@ -18,7 +18,7 @@
             </a>
             @foreach (var categoria in Model.Categorias)
             {
-                <a class="btn btn-secondary" asp-action="Produtos" asp-route-id="@categoria.Id">@categoria.Nome</a>
+                <a class="btn btn-secondary btn-space" asp-action="Produtos" asp-route-id="@categoria.Id">@categoria.Nome</a>
             }
         </div>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3">
@@ -26,7 +26,7 @@
             {
                 <div class="col cursor-pointer"
                     onclick="window.location='@Url.Action("Produto", "Home", new{id = produto.Id})'">
-                    <div class="card shadow-sm py-4 pb-0">
+                    <div class="card shadow-sm py-4 pb-0 card-height">
                         <img class="img-fluid px-4" src="@produto.Foto" alt="@produto.Nome">
                         <div class="card-body px-4">
                             <p class="card-text fw-bold lh-1">@produto.Nome</p>
